@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-custom': '#4ADE80',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+    <!-- Container principal -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 md:p-12 text-center max-w-md w-full mx-auto">
+        
+        <!-- Título principal -->
+        <h1 class="text-4xl md:text-5xl font-bold text-green-500 mb-6">
+            Parabéns!
+        </h1>
+        
+        <!-- Subtítulo -->
+        <p class="text-xl md:text-2xl text-gray-800 font-medium mb-2 leading-relaxed">
+            Agora você só precisa aguardar, o próximo passo é com a gente!
+        </p>
+        
+        <!-- Emoji -->
+        <div class="text-3xl mb-12">😊</div>
+        
+        <!-- Texto explicativo -->
+        <p class="text-gray-600 text-base mb-12 leading-relaxed">
+            Nosso time vai cuidar de tudo para que seu produto chegue o quanto antes.
+        </p>
+
+        <!-- Progress Steps -->
+        <div class="flex items-center justify-center mb-12">
+            <!-- Agendado -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mb-2">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <span class="text-xs text-gray-600">Agendado</span>
+            </div>
+            
+            <!-- Linha de conexão -->
+            <div class="w-8 h-0.5 bg-gray-300 mx-2"></div>
+            
+            <!-- Separação -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-orange-400 rounded-full flex items-center justify-center mb-2">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <span class="text-xs text-gray-600">Separação</span>
+            </div>
+            
+            <!-- Linha de conexão -->
+            <div class="w-8 h-0.5 bg-gray-300 mx-2"></div>
+            
+            <!-- Em Rota -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mb-2">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path>
+                        <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1V8a1 1 0 00-1-1h-3z"></path>
+                    </svg>
+                </div>
+                <span class="text-xs text-gray-600">Em Rota</span>
+            </div>
+            
+            <!-- Linha de conexão -->
+            <div class="w-8 h-0.5 bg-gray-300 mx-2"></div>
+            
+            <!-- Entregue -->
+            <div class="flex flex-col items-center">
+                <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center mb-2">
+                    <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+                <span class="text-xs text-gray-600">Entregue</span>
+            </div>
+        </div>
+
+        <!-- Botão Voltar -->
+        <a href="#" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-medium py-3 px-8 rounded-full transition-colors duration-200 shadow-lg">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+            </svg>
+            Voltar para página principal
+        </a>
+
+        <!-- Footer -->
+        <div class="mt-12 pt-6 border-t border-gray-100">
+            <p class="text-xs text-gray-400">
+                Ofertinha do Dia © 2025 - Todos os direitos reservados.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
