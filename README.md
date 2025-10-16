@@ -1,2 +1,3 @@
 "# PaginaObrigado" 
 "# obrigadoclareador" 
+"# obrigadominilavadora" 
